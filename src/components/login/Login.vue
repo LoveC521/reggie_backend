@@ -4,6 +4,7 @@ import { reactive, ref } from 'vue';
 import { ElMessage, type FormInstance, type FormRules } from 'element-plus';
 import {loginRequest} from '@/api/employee';
 import router from '@/router';
+import { useEmployeeStore } from '@/stores/employee';
 
 
 // 登录表单的实例
@@ -46,6 +47,9 @@ const loginFormRules = reactive<FormRules>({
 // 控制登录按钮的加载状态
 const isButtonLoading = ref(false);
 
+// 全局employee状态
+const employeeStore = useEmployeeStore();
+
 
 // 提交登录表单
 const submitLoginForm = () => {
@@ -59,6 +63,9 @@ const submitLoginForm = () => {
         // 校验成功，发送登录请求
         const res = await loginRequest(loginForm);
         if(res.code === 1) {
+            employeeStore.$patch({
+               employee: res.data
+            });
             ElMessage.success('登录成功');  
             router.push('/home')
         }

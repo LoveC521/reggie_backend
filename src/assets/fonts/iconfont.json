@@ -1,0 +1,44 @@
+{
+  "id": "3977786",
+  "name": "reggie_backend",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1115078",
+      "name": "套餐",
+      "font_class": "taocan",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "2170870",
+      "name": "菜品-2",
+      "font_class": "caipin-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "2675010",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "11372658",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e8ae",
+      "unicode_decimal": 59566
+    },
+    {
+      "icon_id": "32814378",
+      "name": "employee",
+      "font_class": "employee",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
