@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <h1>你好</h1>
-
-  
+  <RouterView></RouterView>
 </template>
 
 <style scoped>

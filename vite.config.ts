@@ -9,7 +9,9 @@ let globals = externalGlobals({
   vue: 'Vue',
   'vue-router': 'VueRouter',
   pinia: 'Pinia',
-  'element-plus': 'ElementPlus'
+  'element-plus': 'ElementPlus',
+  'axios': 'axios',
+  'icons-vue': 'IconsVue'
 });
 
 // https://vitejs.dev/config/
@@ -17,7 +19,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
         // 配置打包忽略
-      external: ['vue', 'vue-router', 'pinia', 'element-plus'],
+      external: ['vue', 'vue-router', 'pinia', 'element-plus', 'axios', 'icons-vue'],
       plugins: [globals]
     }
   },
